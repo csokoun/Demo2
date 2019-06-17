@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<center>
+		<h1 style="color: blue; color: blue;">Calculator</h1>
+		<table border="3" style="background-color: pink">
+			<tr>
+				<td style="text-align: center;">a </td>
+				<td><input type="text" id="tfa"/></td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">b </td>
+				<td><input type="text" id="tfb"/></td>
+			</tr>
+			<tr>
+				<td colspan="10" align="center">
+					<input type="button" style="width: 30px;" value="+" onclick="calAdd()"/>
+					<input type="button" style="width: 30px;" value="-" onclick="calminus()"/>
+					<input type="button" style="width: 30px;" value="*" onclick="calmulti()"/>
+					<input type="button" style="width: 30px;" value="/" onclick="caldevise()"/>
+				</td>
+
+			</tr>
+			<tr>
+				<td>Result</td>
+				<td><input type="text" id="tfr"/></td>
+			</tr>
+		</table>
+	</center>
+</head>
+<body>
+<script language="Javascript">
+	function calAdd() {
+		var a,b,s;
+		a=parseFloat (document.getElementById("tfa").value);
+		b=parseFloat(document.getElementById("tfb").value);
+		s=a+b
+		document.getElementById("tfr").value=s;
+	}
+	function calminus(){
+		var a,b,s;
+		a=parseFloat (document.getElementById("tfa").value);
+		b=parseFloat(document.getElementById("tfb").value);
+		s=a-b;
+		document.getElementById("tfr").value=s;
+	}
+	function calmulti(){
+		var a,b,s;
+		a=parseFloat (document.getElementById("tfa").value);
+		b=parseFloat (document.getElementById("tfb").value);
+		s=a*b;
+		document.getElementById("tfr").value=s;
+	}
+	function caldevise(){
+		var a,b,s;
+		a=parseFloat (document.getElementById("tfa").value);
+		b=parseFloat (document.getElementById("tfb").value);
+		s=a/b;
+		document.getElementById("tfr").value=s;
+	}
+</script>
+</body>
+</html>
