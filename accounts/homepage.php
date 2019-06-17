@@ -12,6 +12,7 @@
 	body{
         background-color: blue;
     }
+    
 </style>
 </head>
 <body>
